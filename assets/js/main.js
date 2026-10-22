@@ -342,7 +342,14 @@
       buttons.forEach(function (btn) {
         var active = btn.getAttribute('data-filter') === filter;
         btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-        if (active) activeLabel = btn.textContent.trim();
+        if (active) {
+          activeLabel = btn.textContent.trim();
+          try {
+            if (typeof btn.scrollIntoView === 'function' && window.innerWidth < 640) {
+              btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+            }
+          } catch (e) {}
+        }
       });
 
       // Update status text

@@ -57,11 +57,11 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center h-12 px-7 rounded-full bg-forest text-ivory font-medium text-sm tracking-wide transition-colors duration-200 hover:bg-charcoal dark:bg-dark-accent dark:text-dark-bg dark:hover:opacity-90;
+    @apply inline-flex items-center justify-center h-12 px-7 rounded-full bg-forest text-ivory font-medium text-sm tracking-wide whitespace-nowrap transition-colors duration-200 hover:bg-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent dark:bg-dark-accent dark:text-dark-bg dark:hover:opacity-90;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center h-12 px-7 rounded-full border border-current text-text font-medium text-sm tracking-wide transition-colors duration-200 hover:bg-sage/40 dark:hover:bg-white/10;
+    @apply inline-flex items-center justify-center h-12 px-7 rounded-full border border-border text-text font-medium text-sm tracking-wide whitespace-nowrap transition-colors duration-200 hover:bg-sage/40 hover:border-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent dark:border-border dark:hover:bg-white/10 dark:hover:border-dark-accent;
   }
 
   .nav-link {
@@ -69,11 +69,11 @@
   }
 
   .nav-link[aria-current="page"] {
-    @apply text-text after:absolute after:left-0 after:-bottom-[2px] after:h-[2px] after:w-full after:bg-accent;
+    @apply text-text after:absolute after:inset-x-0 after:-bottom-[2px] after:h-[2px] after:w-full after:bg-accent;
   }
 
   .icon-btn {
-    @apply inline-flex items-center justify-center h-10 w-10 rounded-full border border-border text-text hover:bg-sage/40 dark:hover:bg-white/10 transition-colors duration-150;
+    @apply inline-flex items-center justify-center h-10 w-10 shrink-0 rounded-full border border-border text-text hover:bg-sage/40 dark:hover:bg-white/10 transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
   }
 
   .eyebrow {
@@ -128,11 +128,11 @@
 
   /* Buttons for use on dark (forest) bands — same metrics as .btn-primary */
   .btn-on-dark {
-    @apply inline-flex items-center justify-center h-12 px-7 rounded-full bg-ivory text-forest font-medium text-sm tracking-wide transition-colors duration-200 hover:bg-white dark:bg-dark-accent dark:text-dark-bg dark:hover:opacity-90;
+    @apply inline-flex items-center justify-center h-12 px-7 rounded-full bg-ivory text-forest font-medium text-sm tracking-wide whitespace-nowrap transition-colors duration-200 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ivory dark:bg-dark-accent dark:text-dark-bg dark:hover:opacity-90;
   }
 
   .btn-outline-on-dark {
-    @apply inline-flex items-center justify-center h-12 px-7 rounded-full border border-ivory/70 text-ivory font-medium text-sm tracking-wide transition-colors duration-200 hover:bg-white/10;
+    @apply inline-flex items-center justify-center h-12 px-7 rounded-full border border-ivory/70 text-ivory font-medium text-sm tracking-wide whitespace-nowrap transition-colors duration-200 hover:bg-white/10 hover:border-ivory focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ivory;
   }
 
   .index-num {
@@ -141,7 +141,7 @@
 
   /* Products: category filter chips */
   .filter-chip {
-    @apply inline-flex h-10 items-center justify-center rounded-full border border-border bg-surface px-4 text-sm font-medium text-text transition-colors duration-150 hover:border-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+    @apply inline-flex h-10 items-center justify-center rounded-full border border-border bg-surface px-4 text-sm font-medium text-text whitespace-nowrap transition-colors duration-150 hover:border-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
   }
 
   .filter-chip[aria-pressed='true'] {
@@ -357,6 +357,20 @@
   color: rgb(23 31 27);
 }
 
+@media (max-width: 639.98px) {
+  .pagination {
+    gap: 0.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .pagination-btn {
+    min-width: 2.25rem;
+    height: 2.25rem;
+    padding: 0 0.5rem;
+    font-size: 0.8125rem;
+  }
+}
+
 /* ================================================================
    CORRECTION 4B: Product card alignment
    ================================================================ */
@@ -379,8 +393,88 @@
   text-align: start;
 }
 
+@media (min-width: 640px) {
+  [data-product-grid] > li > article h3 {
+    min-height: 3.5rem;
+    line-height: 1.35;
+  }
+
+  [data-product-grid] > li > article p.flex-1 {
+    min-height: 6rem;
+  }
+}
+
 [data-product-grid] > li > article .btn-secondary {
   margin-top: auto;
+}
+
+/* ================================================================
+   Mobile Product Options Alignment (Browse the catalogue)
+   ================================================================ */
+@media (max-width: 639.98px) {
+  [data-product-filters] {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+    margin-inline: -1rem;
+    padding-inline: 1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  [data-product-filters]::-webkit-scrollbar {
+    display: none;
+  }
+
+  [data-product-filters] .filter-chip {
+    flex-shrink: 0;
+  }
+}
+
+/* ================================================================
+   Mobile CTA Button Equal Sizing
+   On mobile screens (<640px), grouped CTA buttons stack full-width
+   so both buttons have the exact same width (100%), exact same height
+   (h-12 / 48px), and centered alignment.
+   ================================================================ */
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.75rem;
+}
+
+.cta-group > a,
+.cta-group > button,
+.cta-group .btn-primary,
+.cta-group .btn-secondary,
+.cta-group .btn-on-dark,
+.cta-group .btn-outline-on-dark {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .cta-group {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: 1rem;
+  }
+
+  .cta-group > a,
+  .cta-group > button,
+  .cta-group .btn-primary,
+  .cta-group .btn-secondary,
+  .cta-group .btn-on-dark,
+  .cta-group .btn-outline-on-dark {
+    width: auto;
+  }
 }
 
 /* Mobile drawer: collapsible Home dropdown */
