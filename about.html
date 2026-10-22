@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — WildHaven Exotics</title>
+  <meta name="description" content="WildHaven Exotics helps people explore exotic animals and understand the responsibilities of caring for them, with care guides and habitat equipment information." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23183D32' stroke-width='1.8'%3E%3Cpath d='M12 2C7 5 4 9 4 13a8 8 0 0 0 16 0c0-4-3-8-8-11Z'/%3E%3Cpath d='M12 8v12'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('wh-theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+        var dir = localStorage.getItem('wh-dir') || 'ltr';
+        document.documentElement.setAttribute('dir', dir);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="bg-bg text-text antialiased">
+
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-forest focus:px-4 focus:py-2 focus:text-ivory">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="sticky top-0 z-30 border-b border-border bg-bg/95 backdrop-blur-sm">
+    <div class="mx-auto flex max-w-content items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex shrink-0 items-center gap-2" aria-label="WildHaven Exotics home">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-forest dark:text-dark-accent" aria-hidden="true">
+          <path d="M12 2C7 5 4 9 4 13a8 8 0 0 0 16 0c0-4-3-8-8-11Z" />
+          <path d="M12 8v12" />
+        </svg>
+        <span class="font-serif text-lg font-semibold tracking-tight sm:text-xl">WildHaven <span class="text-accent">Exotics</span></span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden items-center gap-7 lg:flex">
+        <div class="relative" data-dropdown>
+          <button
+            type="button"
+            data-dropdown-trigger
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="nav-link flex items-center gap-1"
+           
+          >
+            Home
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <div class="dropdown-panel hidden" data-dropdown-menu>
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="home-2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </div>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="care-guides.html" class="nav-link">Care Guides</a>
+        <a href="about.html" class="nav-link" aria-current="page">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button type="button" data-theme-toggle class="icon-btn focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" aria-pressed="false" aria-label="Switch to dark theme">
+          <svg class="sun-icon block dark:hidden" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5" />
+            <path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" />
+          </svg>
+          <svg class="moon-icon hidden dark:block" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" />
+          </svg>
+        </button>
+        <button type="button" data-dir-toggle class="icon-btn w-14 text-xs font-semibold tracking-wide focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" aria-label="Switch to right-to-left layout">RTL</button>
+
+        <a href="products.html" class="btn-primary hidden xl:inline-flex">Explore Species</a>
+
+        <button
+          type="button"
+          data-nav-open
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open menu"
+          class="icon-btn lg:hidden"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="nav-overlay hidden" data-nav-overlay></div>
+  <aside id="mobile-drawer" data-nav-drawer class="nav-drawer" aria-label="Mobile navigation" inert>
+    <div class="flex items-center justify-between border-b border-border px-5 py-4">
+      <span class="font-serif text-lg font-semibold">Menu</span>
+      <button type="button" data-nav-close aria-label="Close menu" class="icon-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </div>
+    <nav aria-label="Mobile primary" class="flex flex-col gap-1 px-4 py-4">
+      <div data-mobile-dropdown>
+        <button
+          type="button"
+          class="drawer-link flex w-full items-center justify-between focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          data-mobile-dropdown-trigger
+          aria-expanded="false"
+          aria-controls="mobile-home-menu"
+        >
+          <span>Home</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform duration-200" aria-hidden="true" data-mobile-dropdown-icon><path d="M6 9l6 6 6-6" /></svg>
+        </button>
+        <div id="mobile-home-menu" class="hidden flex-col gap-1 ps-4 pt-1 pb-1" data-mobile-dropdown-menu>
+          <a href="index.html" class="drawer-link text-sm">Home 1</a>
+          <a href="home-2.html" class="drawer-link text-sm">Home 2</a>
+        </div>
+      </div>
+      <div class="my-2 border-t border-border"></div>
+      <a href="products.html" class="drawer-link">Products</a>
+      <a href="care-guides.html" class="drawer-link">Care Guides</a>
+      <a href="about.html" class="drawer-link" aria-current="page">About</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+    </nav>
+    <div class="mt-auto flex flex-col gap-3 border-t border-border px-4 py-5">
+      <a href="products.html" class="btn-primary w-full">Explore Species</a>
+      <div class="flex gap-3">
+        <button type="button" data-theme-toggle class="icon-btn w-full flex-1" aria-pressed="false" aria-label="Switch to dark theme">
+          <svg class="sun-icon block dark:hidden" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5" />
+            <path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" />
+          </svg>
+          <svg class="moon-icon hidden dark:block" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" />
+          </svg>
+        </button>
+        <button type="button" data-dir-toggle class="icon-btn w-full flex-1 text-xs font-semibold tracking-wide" aria-label="Switch to right-to-left layout">RTL</button>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ===================== SECTION 1: HERO ===================== -->
+    <section class="mx-auto max-w-content px-4 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="about-heading">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-center lg:gap-12">
+        <div class="lg:col-span-7">
+          <p class="eyebrow mb-5">About WildHaven Exotics</p>
+          <h1 id="about-heading" class="font-serif text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-[3.25rem]">Curiosity With Care at Its Core</h1>
+          <p class="mt-6 max-w-xl text-base leading-relaxed text-text-muted sm:text-lg">
+            Exotic animals inspire fascination. We want to help people explore that curiosity — and understand the responsibilities that come with caring for an animal whose needs are very different from our own.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#approach" class="text-link">
+              Read about our approach to care
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <img
+            src="assets/images/about/hero-giant-gecko-portrait.jpg"
+            alt="Close-up of a New Caledonian giant gecko's head, showing its mottled olive skin and textured eye, resting on a branch"
+            width="1920"
+            height="1280"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+            class="aspect-[4/3] w-full rounded-[1.75rem] object-cover object-[30%_center] sm:aspect-[16/10] lg:aspect-[4/5] lg:h-[520px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 2: OUR PURPOSE ===================== -->
+    <section class="bg-surface py-16 lg:py-24" aria-labelledby="purpose-heading">
+      <div class="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-4 lg:grid-cols-12 lg:gap-10">
+          <div class="lg:col-span-5">
+            <p class="eyebrow mb-3">Our Purpose</p>
+            <h2 id="purpose-heading" class="font-serif text-3xl font-semibold tracking-tight sm:text-4xl">What WildHaven Exotics sets out to do.</h2>
+          </div>
+          <p class="text-text-muted lg:col-span-6 lg:col-start-7 lg:self-end">These are the principles that shape the site — what we aim for, rather than claims about what has been achieved.</p>
+        </div>
+
+        <ol class="mt-12 grid gap-x-10 sm:grid-cols-2">
+          <li class="border-t border-border py-8">
+            <span class="font-serif text-4xl font-medium text-accent" aria-hidden="true">01</span>
+            <h3 class="mt-4 font-serif text-xl font-semibold">Make exotic-pet information easier to explore</h3>
+            <p class="mt-2 text-sm leading-relaxed text-text-muted">Clear, organised introductions to different animal groups and the care topics that matter most.</p>
+          </li>
+          <li class="border-t border-border py-8">
+            <span class="font-serif text-4xl font-medium text-accent" aria-hidden="true">02</span>
+            <h3 class="mt-4 font-serif text-xl font-semibold">Encourage informed, responsible ownership</h3>
+            <p class="mt-2 text-sm leading-relaxed text-text-muted">Prompting the right questions before an animal comes home, not after.</p>
+          </li>
+          <li class="border-t border-border py-8">
+            <span class="font-serif text-4xl font-medium text-accent" aria-hidden="true">03</span>
+            <h3 class="mt-4 font-serif text-xl font-semibold">Help people understand habitat requirements</h3>
+            <p class="mt-2 text-sm leading-relaxed text-text-muted">Explaining why enclosures, temperature, lighting and substrate need to suit each species.</p>
+          </li>
+          <li class="border-t border-border py-8">
+            <span class="font-serif text-4xl font-medium text-accent" aria-hidden="true">04</span>
+            <h3 class="mt-4 font-serif text-xl font-semibold">Connect equipment with learning</h3>
+            <p class="mt-2 text-sm leading-relaxed text-text-muted">Making it simpler to find relevant habitat equipment alongside the guidance needed to use it well.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 3: OUR APPROACH TO CARE ===================== -->
+    <section id="approach" class="mx-auto max-w-content scroll-mt-24 px-4 py-16 sm:px-6 lg:px-8 lg:py-24" aria-labelledby="approach-heading">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-12">
+        <div class="lg:sticky lg:top-24 lg:col-span-7">
+          <img
+            src="assets/images/about/approach-naturalistic-habitat.jpg"
+            alt="A naturalistic glass enclosure furnished with twisting roots, cork and ferns on a layered substrate"
+            width="1920"
+            height="1078"
+            loading="lazy"
+            decoding="async"
+            class="aspect-[16/10] w-full rounded-2xl object-cover"
+          />
+        </div>
+        <div class="lg:col-span-5">
+          <p class="eyebrow mb-3">Our Approach to Care</p>
+          <h2 id="approach-heading" class="font-serif text-3xl font-semibold tracking-tight sm:text-4xl">The animal's needs come first.</h2>
+          <dl class="mt-8 space-y-7">
+            <div>
+              <dt class="font-serif text-lg font-semibold">Research species-specific requirements</dt>
+              <dd class="mt-1 text-sm leading-relaxed text-text-muted">Good care starts with understanding the particular species — its natural environment, diet, behaviour and lifespan.</dd>
+            </div>
+            <div>
+              <dt class="font-serif text-lg font-semibold">Treat welfare as the priority</dt>
+              <dd class="mt-1 text-sm leading-relaxed text-text-muted">Decisions about housing, equipment and handling should be judged by what is best for the animal, not by convenience or appearance.</dd>
+            </div>
+            <div>
+              <dt class="font-serif text-lg font-semibold">Source responsibly and know the law</dt>
+              <dd class="mt-1 text-sm leading-relaxed text-text-muted">We encourage people to ask where animals come from and to check the regulations that apply where they live, as these differ between places.</dd>
+            </div>
+            <div>
+              <dt class="font-serif text-lg font-semibold">Respect that every species is different</dt>
+              <dd class="mt-1 text-sm leading-relaxed text-text-muted">A setup that suits one animal may be unsuitable for another, even a closely related one.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 4: HABITAT AND PRODUCT PHILOSOPHY ===================== -->
+    <section class="bg-sage/40 py-16 dark:bg-white/5 lg:py-24" aria-labelledby="philosophy-heading">
+      <div class="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
+        <p class="eyebrow mb-4">Habitat &amp; Product Philosophy</p>
+        <h2 id="philosophy-heading" class="max-w-4xl font-serif text-3xl font-medium leading-snug tracking-tight sm:text-4xl lg:text-5xl">
+          The right equipment is whatever suits the animal, its enclosure and the conditions it needs.
+        </h2>
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+          <div class="border-s-2 border-accent ps-5">
+            <h3 class="font-serif text-lg font-semibold">The species</h3>
+            <p class="mt-2 text-sm leading-relaxed text-text-muted">Its natural climate, size and behaviour determine what it needs to thrive.</p>
+          </div>
+          <div class="border-s-2 border-accent ps-5">
+            <h3 class="font-serif text-lg font-semibold">The enclosure</h3>
+            <p class="mt-2 text-sm leading-relaxed text-text-muted">Size, materials and ventilation affect which heating, lighting and substrate will work.</p>
+          </div>
+          <div class="border-s-2 border-accent ps-5">
+            <h3 class="font-serif text-lg font-semibold">The environment</h3>
+            <p class="mt-2 text-sm leading-relaxed text-text-muted">Room temperature and seasonal changes influence how equipment performs over time.</p>
+          </div>
+        </div>
+        <p class="mt-10 max-w-2xl text-sm leading-relaxed text-text-muted">Our catalogue illustrates the types of equipment we can advise on. Availability varies, and no single product suits every species or setup.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-6">
+          <a href="products.html" class="text-link">
+            Browse habitat products
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+          <a href="care-guides.html" class="text-link">
+            Read the care guides
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 5: EDUCATION AND CUSTOMER SUPPORT ===================== -->
+    <section class="mx-auto max-w-content px-4 py-16 sm:px-6 lg:px-8 lg:py-24" aria-labelledby="support-heading">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-center lg:gap-12">
+        <div class="lg:col-span-6">
+          <p class="eyebrow mb-3">Education &amp; Support</p>
+          <h2 id="support-heading" class="font-serif text-3xl font-semibold tracking-tight sm:text-4xl">Learn first, then ask.</h2>
+          <p class="mt-5 leading-relaxed text-text-muted">This website is designed around learning and enquiry. You can read the care guides, browse habitat equipment, and contact us with questions about products and general care resources.</p>
+
+          <div class="mt-8 grid gap-6 sm:grid-cols-2">
+            <div>
+              <h3 class="font-serif text-lg font-semibold">How we can help</h3>
+              <ul class="mt-3 space-y-2 text-sm leading-relaxed text-text-muted">
+                <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Introductory care guides by topic</li>
+                <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Information on habitat equipment types</li>
+                <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Answers to product and setup enquiries</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-serif text-lg font-semibold">When to look further</h3>
+              <ul class="mt-3 space-y-2 text-sm leading-relaxed text-text-muted">
+                <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Detailed needs of a specific species</li>
+                <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Health concerns, illness or injury</li>
+                <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Legal questions about keeping a species</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mt-8 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-text-muted">
+            <strong class="font-semibold text-text">Veterinary advice:</strong> our guidance is general and educational. For health questions, consult a qualified veterinarian experienced with exotic animals. For legal questions, check with the relevant local authority.
+          </p>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8">
+          <img
+            src="assets/images/about/education-exotic-veterinary-exam.jpg"
+            alt="Veterinary professionals examining a green iguana on a treatment table"
+            width="1280"
+            height="853"
+            loading="lazy"
+            decoding="async"
+            class="aspect-[4/3] w-full rounded-2xl object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 6: RESPONSIBLE OWNERSHIP CTA ===================== -->
+    <section class="mx-auto max-w-content px-4 pb-16 sm:px-6 lg:px-8 lg:pb-24" aria-labelledby="about-cta-heading">
+      <div class="flex flex-col gap-8 border-t-2 border-brand pt-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
+        <div class="max-w-2xl">
+          <h2 id="about-cta-heading" class="font-serif text-2xl font-semibold tracking-tight sm:text-3xl">Responsible ownership starts with research.</h2>
+          <p class="mt-3 leading-relaxed text-text-muted">Begin with the care guides, or get in touch with a question.</p>
+        </div>
+        <div class="flex shrink-0 flex-wrap items-center gap-4">
+          <a href="care-guides.html" class="btn-primary">Explore Care Guides</a>
+          <a href="contact.html" class="btn-secondary">Contact Our Team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-border bg-surface">
+    <div class="mx-auto max-w-content px-4 py-12 sm:px-6 lg:px-8">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="sm:col-span-2 lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-2" aria-label="WildHaven Exotics home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-forest dark:text-dark-accent" aria-hidden="true">
+              <path d="M12 2C7 5 4 9 4 13a8 8 0 0 0 16 0c0-4-3-8-8-11Z" />
+              <path d="M12 8v12" />
+            </svg>
+            <span class="font-serif text-lg font-semibold">WildHaven <span class="text-accent">Exotics</span></span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm text-text-muted">Extraordinary Creatures. Thoughtful Care. A specialist source for exotic animals, habitat supplies and responsible-ownership education.</p>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-text-muted">Navigate</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="index.html" class="text-text/85 hover:text-accent">Home</a></li>
+            <li><a href="products.html" class="text-text/85 hover:text-accent">Products</a></li>
+            <li><a href="about.html" class="text-text/85 hover:text-accent">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-text-muted">Resources</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="care-guides.html" class="text-text/85 hover:text-accent">Care Guides</a></li>
+            <li><a href="contact.html" class="text-text/85 hover:text-accent">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-text-muted">Follow</h3>
+          <div class="mt-4 flex gap-3">
+            <a href="contact.html" class="icon-btn" aria-label="WildHaven Exotics on Instagram (coming soon)" title="Coming soon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" /></svg>
+            </a>
+            <a href="contact.html" class="icon-btn" aria-label="WildHaven Exotics on Facebook (coming soon)" title="Coming soon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M14 21v-7h2.5l.5-3H14V9c0-.9.3-1.5 1.7-1.5H17V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H8v3h2.5v7" /></svg>
+            </a>
+            <a href="contact.html" class="icon-btn" aria-label="WildHaven Exotics on YouTube (coming soon)" title="Coming soon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3" /><path d="M11 10l4 2-4 2z" fill="currentColor" stroke="none" /></svg>
+            </a>
+            <a href="contact.html" class="icon-btn" aria-label="WildHaven Exotics on X (coming soon)" title="Coming soon">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-sm text-text-muted sm:flex-row sm:items-center sm:justify-between">
+        <p>&copy; <span data-current-year>2026</span> WildHaven Exotics. All rights reserved.</p>
+        <p class="max-w-md">Responsible ownership starts with research — every species has unique legal, housing and welfare requirements worth understanding first.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

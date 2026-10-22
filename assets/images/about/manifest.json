@@ -1,0 +1,26 @@
+[
+  {
+    "name": "hero",
+    "filename": "hero-giant-gecko-portrait.jpg",
+    "title": "File:Rhacodactylus leachianus 33611972.jpg",
+    "license": "CC BY 4.0",
+    "artist": "Lennart Hudel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhacodactylus_leachianus_33611972.jpg"
+  },
+  {
+    "name": "approach",
+    "filename": "approach-naturalistic-habitat.jpg",
+    "title": "File:Terrariumbau 34.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Burkhard Mücke",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terrariumbau_34.jpg"
+  },
+  {
+    "name": "education",
+    "filename": "education-exotic-veterinary-exam.jpg",
+    "title": "File:Exoticka medicina.JPG",
+    "license": "CC BY-SA 3.0",
+    "artist": "Hopgardener",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exoticka_medicina.JPG"
+  }
+]

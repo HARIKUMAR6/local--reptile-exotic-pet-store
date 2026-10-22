@@ -1,0 +1,90 @@
+[
+  {
+    "name": "hero",
+    "filename": "hero-bearded-dragon.jpg",
+    "title": "File:Bearded Dragon in terrarium.jpg",
+    "license": "CC BY-SA 2.5",
+    "artist": "André Karwath aka Aka",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABearded%20Dragon%20in%20terrarium.jpg"
+  },
+  {
+    "name": "habitat-vivarium",
+    "filename": "habitat-build-vivarium.jpg",
+    "title": "File:Bioactive Arid Vivarium.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Connor Long",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABioactive%20Arid%20Vivarium.jpg"
+  },
+  {
+    "name": "species-reptile",
+    "filename": "species-reptile-leopard-gecko.jpg",
+    "title": "File:Leopard Gecko.jpg",
+    "license": "CC0",
+    "artist": "Swaggyswimmer",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALeopard%20Gecko.jpg"
+  },
+  {
+    "name": "species-amphibian",
+    "filename": "species-amphibian-tree-frog.jpg",
+    "title": "File:Red eyed tree frog edit2.jpg",
+    "license": "Public domain",
+    "artist": "Careyjamesbalboa (Carey James Balboa)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARed%20eyed%20tree%20frog%20edit2.jpg"
+  },
+  {
+    "name": "species-invertebrate",
+    "filename": "species-invertebrate-tarantula.jpg",
+    "title": "File:(Pet) Brazilian whiteknee tarantula (Theraphosidae, Acanthoscurria geniculata) (23486439338).jpg",
+    "license": "CC0",
+    "artist": "Insects Unlocked",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A(Pet)%20Brazilian%20whiteknee%20tarantula%20(Theraphosidae%2C%20Acanthoscurria%20geniculata)%20(23486439338).jpg"
+  },
+  {
+    "name": "species-other",
+    "filename": "species-other-chameleon.jpg",
+    "title": "File:Veiled chameleon Chamaeleo calyptratus Berlin Zoo.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Kristof Magnusson",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AVeiled%20chameleon%20Chamaeleo%20calyptratus%20Berlin%20Zoo.jpg"
+  },
+  {
+    "name": "habitat-planted",
+    "filename": "habitat-supplies-planted-terrarium.jpg",
+    "title": "File:Terrarien-Gestaltung.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "MonsterDoc",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATerrarien-Gestaltung.jpg"
+  },
+  {
+    "name": "care-guide-gecko",
+    "filename": "care-guides-crested-gecko.jpg",
+    "title": "File:Crested gecko - 1.jpg",
+    "license": "CC BY 4.0",
+    "artist": "Lennart Hudel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACrested%20gecko%20-%201.jpg"
+  },
+  {
+    "name": "heating-lighting",
+    "filename": "habitat-supplies-heating-lighting-bulb.jpg",
+    "title": "File:Incandescent floodlight bulb 100 W, shape PAR-9600.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Raimond Spekking",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AIncandescent%20floodlight%20bulb%20100%20W%2C%20shape%20PAR-9600.jpg"
+  },
+  {
+    "name": "substrate",
+    "filename": "habitat-supplies-substrate-coco-coir.jpg",
+    "title": "File:Brick of coco coir.JPG",
+    "license": "CC BY 3.0",
+    "artist": "MatiasMiika",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABrick%20of%20coco%20coir.JPG"
+  },
+  {
+    "name": "feeding-maintenance",
+    "filename": "habitat-supplies-feeding-maintenance-sprayer.jpg",
+    "title": "File:1 liter trigger spray bottle.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Plasticbottlesupplier",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1%20liter%20trigger%20spray%20bottle.jpg"
+  }
+]

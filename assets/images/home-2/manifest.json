@@ -1,0 +1,82 @@
+[
+  {
+    "name": "hero",
+    "filename": "hero-green-tree-python.jpg",
+    "title": "File:Green Tree Python (Morelia viridis) (CWPG).jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Vauxford",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_Tree_Python_(Morelia_viridis)_(CWPG).jpg"
+  },
+  {
+    "name": "type-reptile",
+    "filename": "type-reptile-ball-python.jpg",
+    "title": "File:Python-regius-kopf-königspython.jpg",
+    "license": "CC BY 3.0",
+    "artist": "Holger Krisp",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Python-regius-kopf-k%C3%B6nigspython.jpg"
+  },
+  {
+    "name": "type-amphibian",
+    "filename": "type-amphibian-dart-frog.jpg",
+    "title": "File:Dendrobates tinctorius var. azureus - Karlsruhe Zoo 03.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "H. Zell",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dendrobates_tinctorius_var._azureus_-_Karlsruhe_Zoo_03.jpg"
+  },
+  {
+    "name": "type-invertebrate",
+    "filename": "type-invertebrate-orchid-mantis.jpg",
+    "title": "File:Mantis Hymenopus coronatus 6 Luc Viatour.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Luc Viatour",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mantis_Hymenopus_coronatus_6_Luc_Viatour.jpg"
+  },
+  {
+    "name": "type-other",
+    "filename": "type-other-pygmy-hedgehog.jpg",
+    "title": "File:Atelerix albiventris 56779917.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "B. P. White",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atelerix_albiventris_56779917.jpg"
+  },
+  {
+    "name": "habitat",
+    "filename": "habitat-desert-vivarium.jpg",
+    "title": "File:Steppe Runner In Dessert Vivarium.JPG",
+    "license": "CC BY-SA 3.0",
+    "artist": "J C Laird",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steppe_Runner_In_Dessert_Vivarium.JPG"
+  },
+  {
+    "name": "essentials-monitoring",
+    "filename": "essentials-analogue-hygrometer.jpg",
+    "title": "File:Hygrometer USSR 1987.jpg",
+    "license": "Public domain",
+    "artist": "Schekinov Alexey Victorovich",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hygrometer_USSR_1987.jpg"
+  },
+  {
+    "name": "essentials-substrate",
+    "filename": "essentials-potting-soil.jpg",
+    "title": "File:Potting soil.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Chris Radcliff from San Diego, CA, USA. Color-corrected and cropped by Daniel Case 2008-07-10",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potting_soil.jpg"
+  },
+  {
+    "name": "essentials-decor",
+    "filename": "essentials-cork-background.jpg",
+    "title": "File:Terrariumbau 13.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Burkhard Mücke",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terrariumbau_13.jpg"
+  },
+  {
+    "name": "essentials-enclosure",
+    "filename": "essentials-glass-enclosure.jpg",
+    "title": "File:Terrariumbau 02.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Burkhard Mücke",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terrariumbau_02.jpg"
+  }
+]
